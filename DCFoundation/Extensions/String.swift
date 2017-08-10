@@ -3,7 +3,7 @@
 //  MPFoundation
 //
 //  Created by Igor on 08.12.15.
-//  Copyright © 2015 Mediapark. All rights reserved.
+//  Copyright © 2015 dclife. All rights reserved.
 //
 
 import Foundation
@@ -78,11 +78,11 @@ public extension String {
 public extension String {
     
     public var SHA1: String {
-        return MPFoundationMakeStringSHA1(self)
+        return DCFoundationMakeStringSHA1(self)
     }
     
     public var MD5: String {
-        return MPFoundationMakeStringMD5(self)
+        return DCFoundationMakeStringMD5(self)
     }
     
 }

@@ -31,9 +31,9 @@
 		783335961F3C60150046CD49 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833357A1F3C60150046CD49 /* String.swift */; };
 		783335971F3C60150046CD49 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833357B1F3C60150046CD49 /* URL.swift */; };
 		783335981F3C60150046CD49 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833357C1F3C60150046CD49 /* UserDefaults.swift */; };
-		7833359A1F3C60150046CD49 /* MPFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7833357E1F3C60150046CD49 /* MPFoundation.h */; };
-		7833359C1F3C60150046CD49 /* MPFoundationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 783335801F3C60150046CD49 /* MPFoundationUtils.m */; };
-		7833359D1F3C60450046CD49 /* MPFoundationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7833357F1F3C60150046CD49 /* MPFoundationUtils.h */; };
+		7833359A1F3C60150046CD49 /* DCFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7833357E1F3C60150046CD49 /* DCFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783335FF1F3C64A10046CD49 /* DCFoundationUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 783335FD1F3C64A10046CD49 /* DCFoundationUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783336001F3C64A10046CD49 /* DCFoundationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 783335FE1F3C64A10046CD49 /* DCFoundationUtils.m */; };
 		78BC4DA21DF07754004B38A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA11DF07754004B38A6 /* AppDelegate.swift */; };
 		78BC4DA41DF07754004B38A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA31DF07754004B38A6 /* ViewController.swift */; };
 		78BC4DA71DF07754004B38A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DA51DF07754004B38A6 /* Main.storyboard */; };
@@ -93,9 +93,9 @@
 		7833357B1F3C60150046CD49 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		7833357C1F3C60150046CD49 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		7833357D1F3C60150046CD49 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7833357E1F3C60150046CD49 /* MPFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFoundation.h; sourceTree = "<group>"; };
-		7833357F1F3C60150046CD49 /* MPFoundationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPFoundationUtils.h; sourceTree = "<group>"; };
-		783335801F3C60150046CD49 /* MPFoundationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFoundationUtils.m; sourceTree = "<group>"; };
+		7833357E1F3C60150046CD49 /* DCFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFoundation.h; sourceTree = "<group>"; };
+		783335FD1F3C64A10046CD49 /* DCFoundationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCFoundationUtils.h; sourceTree = "<group>"; };
+		783335FE1F3C64A10046CD49 /* DCFoundationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCFoundationUtils.m; sourceTree = "<group>"; };
 		789DB31B1DC0BA3400322B9E /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BC4D9F1DF07754004B38A6 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BC4DA11DF07754004B38A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,9 +131,9 @@
 				783335621F3C60150046CD49 /* Classes */,
 				7833356D1F3C60150046CD49 /* Extensions */,
 				7833357D1F3C60150046CD49 /* Info.plist */,
-				7833357E1F3C60150046CD49 /* MPFoundation.h */,
-				7833357F1F3C60150046CD49 /* MPFoundationUtils.h */,
-				783335801F3C60150046CD49 /* MPFoundationUtils.m */,
+				7833357E1F3C60150046CD49 /* DCFoundation.h */,
+				783335FD1F3C64A10046CD49 /* DCFoundationUtils.h */,
+				783335FE1F3C64A10046CD49 /* DCFoundationUtils.m */,
 			);
 			path = DCFoundation;
 			sourceTree = "<group>";
@@ -222,8 +222,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7833359D1F3C60450046CD49 /* MPFoundationUtils.h in Headers */,
-				7833359A1F3C60150046CD49 /* MPFoundation.h in Headers */,
+				783335FF1F3C64A10046CD49 /* DCFoundationUtils.h in Headers */,
+				7833359A1F3C60150046CD49 /* DCFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +279,7 @@
 				TargetAttributes = {
 					789DB31A1DC0BA3400322B9E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					78BC4D9E1DF07754004B38A6 = {
@@ -338,7 +339,7 @@
 				783335871F3C60150046CD49 /* Geometry.swift in Sources */,
 				7833358B1F3C60150046CD49 /* CollectionType.swift in Sources */,
 				783335851F3C60150046CD49 /* Debug.swift in Sources */,
-				7833359C1F3C60150046CD49 /* MPFoundationUtils.m in Sources */,
+				783336001F3C64A10046CD49 /* DCFoundationUtils.m in Sources */,
 				783335841F3C60150046CD49 /* CacheOptions.swift in Sources */,
 				783335901F3C60150046CD49 /* Locale.swift in Sources */,
 				783335861F3C60150046CD49 /* DeepLink.swift in Sources */,
@@ -502,6 +503,7 @@
 		789DB3241DC0BA3400322B9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -514,6 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.DCFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -521,6 +524,7 @@
 		789DB3251DC0BA3400322B9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

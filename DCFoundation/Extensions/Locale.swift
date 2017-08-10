@@ -3,7 +3,7 @@
 //  MPLibrary
 //
 //  Created by Igor Danich on 26.08.16.
-//  Copyright © 2016 Mediapark. All rights reserved.
+//  Copyright © 2016 dclife. All rights reserved.
 //
 
 import Foundation

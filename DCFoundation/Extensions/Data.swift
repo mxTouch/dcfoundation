@@ -3,7 +3,7 @@
 //  MPFoundation
 //
 //  Created by Igor Danich on 19.01.16.
-//  Copyright © 2016 Mediapark. All rights reserved.
+//  Copyright © 2016 dclife. All rights reserved.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import Foundation
 public extension Data {
     
     var SHA1: String {
-        return MPFoundationMakeDataSHA1(self)
+        return DCFoundationMakeDataSHA1(self)
     }
     
     var pushToken: String? {

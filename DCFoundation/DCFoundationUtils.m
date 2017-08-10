@@ -3,13 +3,13 @@
 //  MPFoundation
 //
 //  Created by Igor Danich on 19.01.16.
-//  Copyright © 2016 Mediapark. All rights reserved.
+//  Copyright © 2016 dclife. All rights reserved.
 //
 
-#import "MPFoundationUtils.h"
+#import "DCFoundationUtils.h"
 #import <CommonCrypto/CommonCrypto.h>
 
-NSString* MPFoundationMakeStringMD5(NSString* string) {
+NSString* DCFoundationMakeStringMD5(NSString* string) {
     NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
@@ -20,7 +20,7 @@ NSString* MPFoundationMakeStringMD5(NSString* string) {
     return output;
 }
 
-NSString* MPFoundationMakeStringSHA1(NSString* string) {
+NSString* DCFoundationMakeStringSHA1(NSString* string) {
     NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
     uint8_t digest[CC_SHA1_DIGEST_LENGTH];
     CC_SHA1(data.bytes, (CC_LONG)data.length, digest);
@@ -31,7 +31,7 @@ NSString* MPFoundationMakeStringSHA1(NSString* string) {
     return output;
 }
 
-NSString* MPFoundationMakeDataSHA1(NSData* data) {
+NSString* DCFoundationMakeDataSHA1(NSData* data) {
     NSUInteger bytesCount = data.length;
     if (bytesCount) {
         static char const* kHexChars = "0123456789ABCDEF";

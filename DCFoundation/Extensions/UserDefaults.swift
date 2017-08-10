@@ -3,7 +3,7 @@
 //  MPFoundation
 //
 //  Created by Igor Danich on 22.01.16.
-//  Copyright © 2016 Mediapark. All rights reserved.
+//  Copyright © 2016 dclife. All rights reserved.
 //
 
 import Foundation
