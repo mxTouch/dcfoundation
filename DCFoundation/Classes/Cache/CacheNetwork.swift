@@ -62,7 +62,7 @@ class CacheNetworkSession: NSObject, URLSessionDownloadDelegate {
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         guard let index = tasks.index(where: {$0.task == task}) else {return}
-        tasks[safe: index]?.finish(url: nil, error: error as? NSError)
+        tasks[safe: index]?.finish(url: nil, error: error as NSError?)
         if index < tasks.count {tasks.remove(at: index)}
     }
     

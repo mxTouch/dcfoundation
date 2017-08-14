@@ -10,20 +10,20 @@ import Foundation
 
 public extension Date {
     
-//    public init(string: String, format: String) {
-//        let df = DateFormatter()
-//        df.dateFormat = format
-//        if let date = df.date(from: string) {
-//            (self as NSDate).(timeIntervalSince1970: date.timeIntervalSince1970)
-//        } else {
-//            (self as NSDate).init(timeIntervalSince1970: Date().timeIntervalSince1970)
-//        }
-//    }
-    
-    public func string(format: String) -> String? {
+    func string(format: String) -> String? {
         let df = DateFormatter()
         df.dateFormat = format
         return df.string(from: self)
+    }
+    
+}
+
+public extension String {
+    
+    func date(format: String) -> Date? {
+        let df = DateFormatter()
+        df.dateFormat = format
+        return df.date(from:self)
     }
     
 }

@@ -20,7 +20,7 @@ class NotificationListener: NSObject {
     }
     
     func remove(observer: AnyObject, name: String?, object: AnyObject?) {
-        print("Notification remove: \(name)")
+        print("Notification remove: \(name  ?? "")")
         var remove = [Item]()
         if let name = name {
             for item in items {
