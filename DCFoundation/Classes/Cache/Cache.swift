@@ -178,7 +178,9 @@ open class Cache {
                 }
                 sessionTask?.onComplete = { [weak self](object,error) in
                     self?.notifyComplete(object: object, error: error)
-                    handler()
+                    OperationQueue.main.addOperation {
+                        handler()
+                    }
                 }
             }
         }

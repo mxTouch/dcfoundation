@@ -17,6 +17,7 @@ class CacheNetworkSessionTask: NSObject {
     fileprivate var task: URLSessionTask?
     
     init(session: URLSession, url: URL) {
+        super.init()
         task = session.downloadTask(with: url)
         task?.resume()
     }
@@ -53,28 +54,26 @@ class CacheNetworkSession: NSObject, URLSessionDownloadDelegate {
     
     func performTask(url: String) -> CacheNetworkSessionTask? {
         guard let url = URL(string: url) else {return nil}
-        let task = CacheNetworkSessionTask(session: session, url: url)
-        tasks << task
-        return task
+        tasks << CacheNetworkSessionTask(session: session, url: url)
+        return tasks.last
     }
     
     // MARK - NSURLSessionDownloadDelegate
     
     func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
-        guard let index = tasks.index(where: {$0.task == task}) else {return}
-        tasks[safe: index]?.finish(url: nil, error: error as NSError?)
-        if index < tasks.count {tasks.remove(at: index)}
+        guard let error = error as NSError? else {return}
+        tasks.first(where: {$0.task == task})?.finish(url: nil, error: error as NSError?)
+        tasks.remove(predicate: {$0.task == task})
+        print("CACHE ERROR " + (task.originalRequest?.url?.absoluteString ?? "") + error.localizedDescription)
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        guard let index = tasks.index(where: {$0.task == downloadTask}) else {return}
-        tasks[safe: index]?.finish(url: location, error: nil)
-        if index < tasks.count {tasks.remove(at: index)}
+        tasks.first(where: {$0.task == downloadTask})?.finish(url: location, error: nil)
+        tasks.remove(predicate: {$0.task == downloadTask})
     }
     
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didWriteData bytesWritten: Int64, totalBytesWritten: Int64, totalBytesExpectedToWrite: Int64) {
-        guard let index = tasks.index(where: {$0.task == downloadTask}) else {return}
-        tasks[safe: index]?.process(bytesReady: Double(totalBytesWritten), bytesTotal: Double(totalBytesExpectedToWrite))
+        tasks.first(where: {$0.task == downloadTask})?.process(bytesReady: Double(totalBytesWritten), bytesTotal: Double(totalBytesExpectedToWrite))
     }
     
 }
