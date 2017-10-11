@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "78BC4D9E1DF07754004B38A6"
-               BuildableName = "TestApp.app"
-               BlueprintName = "TestApp"
+               BlueprintIdentifier = "7825C9471F6C397300A78248"
+               BuildableName = "DCFoundation.framework"
+               BlueprintName = "DCFoundation-iOS"
                ReferencedContainer = "container:DCFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,15 +30,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78BC4D9E1DF07754004B38A6"
-            BuildableName = "TestApp.app"
-            BlueprintName = "TestApp"
-            ReferencedContainer = "container:DCFoundation.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -53,16 +44,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78BC4D9E1DF07754004B38A6"
-            BuildableName = "TestApp.app"
-            BlueprintName = "TestApp"
+            BlueprintIdentifier = "7825C9471F6C397300A78248"
+            BuildableName = "DCFoundation.framework"
+            BlueprintName = "DCFoundation-iOS"
             ReferencedContainer = "container:DCFoundation.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -72,16 +62,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78BC4D9E1DF07754004B38A6"
-            BuildableName = "TestApp.app"
-            BlueprintName = "TestApp"
+            BlueprintIdentifier = "7825C9471F6C397300A78248"
+            BuildableName = "DCFoundation.framework"
+            BlueprintName = "DCFoundation-iOS"
             ReferencedContainer = "container:DCFoundation.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

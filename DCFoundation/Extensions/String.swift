@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CommonCrypto
 
 public extension String {
     
@@ -22,8 +23,8 @@ public extension String {
         return characters.count
     }
     
-    public func stringByAppendingPathComponent(_ component: String) -> String {
-        return (self as NSString).appendingPathComponent(component)
+    public func appending(pathComponent: String) -> String {
+        return (self as NSString).appendingPathComponent(pathComponent)
     }
     
     public func toDouble() -> Double {
@@ -77,12 +78,17 @@ public extension String {
 
 public extension String {
     
-    public var SHA1: String {
-        return DCFoundationMakeStringSHA1(self)
-    }
-    
     public var MD5: String {
-        return DCFoundationMakeStringMD5(self)
+        let messageData = data(using:.utf8)!
+        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
+        
+        _ = digestData.withUnsafeMutableBytes {digestBytes in
+            messageData.withUnsafeBytes {messageBytes in
+                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
+            }
+        }
+        
+        return digestData.map { String(format: "%02hhx", $0) }.joined()
     }
     
 }

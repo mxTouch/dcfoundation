@@ -93,7 +93,7 @@ public extension Array {
 
 public extension Array where Element : CustomStringConvertible {
     
-    public func componentsJoinedByString(_ separator: String) -> String {
+    public func joinedBy(separator: String) -> String {
         var string = ""
         for (idx,item) in enumerated() {
             string += item.description

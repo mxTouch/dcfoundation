@@ -10,9 +10,9 @@ import Foundation
 
 public extension Data {
     
-    var SHA1: String {
-        return DCFoundationMakeDataSHA1(self)
-    }
+//    var SHA1: String {
+//        return DCFoundationMakeDataSHA1(self)
+//    }
     
     var pushToken: String? {
         return (self as NSData).description.replacingOccurrences(of: " ", with: "")

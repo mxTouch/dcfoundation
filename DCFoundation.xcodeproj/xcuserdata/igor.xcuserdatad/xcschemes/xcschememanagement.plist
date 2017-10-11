@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DCFoundation.xcscheme_^#shared#^_</key>
+		<key>DCFoundation-Mac.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DCFoundation-iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,11 +17,36 @@
 		<key>TestApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7825C8F31F6C32F900A78248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7825C9251F6C386200A78248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7825C9361F6C387000A78248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7825C9471F6C397300A78248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7825C9581F6C397C00A78248</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>789DB31A1DC0BA3400322B9E</key>
 		<dict>
 			<key>primary</key>

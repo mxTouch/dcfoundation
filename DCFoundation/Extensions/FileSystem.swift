@@ -39,9 +39,9 @@ public func DirectoryContentsAt(path: String) -> [String]? {
 }
 
 func HomeDirectory(folder: String, file: String? = nil) -> String {
-    let path = NSHomeDirectory().stringByAppendingPathComponent(folder)
+    let path = NSHomeDirectory().appending(pathComponent: folder)
     if let file = file {
-        return path.stringByAppendingPathComponent(file)
+        return path.appending(pathComponent: file)
     }
     return path
 }

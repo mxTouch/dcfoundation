@@ -103,7 +103,7 @@ open class Localization {
                 let comps = NSHomeDirectory().components(separatedBy: "/")
                 if comps.count > 2 {
                     let home = "/" + comps[1] + "/" + comps[2]
-                    let path = home.stringByAppendingPathComponent("Library/Application Support/Xcode/XIBLocalizations.strings")
+                    let path = home.appending(pathComponent: "Library/Application Support/Xcode/XIBLocalizations.strings")
                     if FileExistsAt(path: path) {
                         localization.addLocalizationStrings(path)
                     }
