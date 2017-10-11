@@ -613,6 +613,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dclife.DCFoundation-Mac";
 				PRODUCT_NAME = DCFoundation;
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/DCFoundation/CommonCrypto";
 				SWIFT_VERSION = 3.0;
@@ -634,6 +635,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dclife.DCFoundation-Mac";
 				PRODUCT_NAME = DCFoundation;
+				SDKROOT = macosx10.13;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/DCFoundation/CommonCrypto";
 				SWIFT_VERSION = 3.0;
