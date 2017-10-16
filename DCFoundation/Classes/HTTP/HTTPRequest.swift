@@ -5,7 +5,7 @@
 //  Copyright © 2017 dclife. All rights reserved.
 //
 
-import DCFoundation
+import Foundation
 
 public class HTTPRequest: NSObject {
     
@@ -38,7 +38,7 @@ public class HTTPRequest: NSObject {
             let eKey = "\(value)".URLEncodedString()
             items << "\(key.URLEncodedString())=\(eKey)"
         }
-        return items.componentsJoinedByString("&")
+        return items.joinedBy(separator: "&")
     }
     
     var urlRequest: URLRequest {

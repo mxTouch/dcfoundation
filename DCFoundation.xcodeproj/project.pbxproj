@@ -61,6 +61,14 @@
 		7825C9961F6C3A1A00A78248 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833356C1F3C60150046CD49 /* Reachability.swift */; };
 		7825C9A11F6C3BF300A78248 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825C9A01F6C3BF300A78248 /* Hash.swift */; };
 		7825C9A21F6C3BF300A78248 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7825C9A01F6C3BF300A78248 /* Hash.swift */; };
+		783A71061F94986800556286 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA71F8E46DA00920EA0 /* HTTPRequest.swift */; };
+		783A71071F94986800556286 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA81F8E46DA00920EA0 /* HTTPResponse.swift */; };
+		783A71081F94986800556286 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA91F8E46DA00920EA0 /* HTTPSession.swift */; };
+		783A71091F94986800556286 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA71F8E46DA00920EA0 /* HTTPRequest.swift */; };
+		783A710A1F94986800556286 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA81F8E46DA00920EA0 /* HTTPResponse.swift */; };
+		783A710B1F94986800556286 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B21FA91F8E46DA00920EA0 /* HTTPSession.swift */; };
+		783A710D1F9498DF00556286 /* MultipartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A710C1F9498DF00556286 /* MultipartBuilder.swift */; };
+		783A710E1F9498DF00556286 /* MultipartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A710C1F9498DF00556286 /* MultipartBuilder.swift */; };
 		78BC4DA21DF07754004B38A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA11DF07754004B38A6 /* AppDelegate.swift */; };
 		78BC4DA41DF07754004B38A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA31DF07754004B38A6 /* ViewController.swift */; };
 		78BC4DA71DF07754004B38A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DA51DF07754004B38A6 /* Main.storyboard */; };
@@ -132,6 +140,7 @@
 		7833357A1F3C60150046CD49 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		7833357B1F3C60150046CD49 /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		7833357C1F3C60150046CD49 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		783A710C1F9498DF00556286 /* MultipartBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartBuilder.swift; sourceTree = "<group>"; };
 		78B21FA71F8E46DA00920EA0 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		78B21FA81F8E46DA00920EA0 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		78B21FA91F8E46DA00920EA0 /* HTTPSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
@@ -281,6 +290,7 @@
 				78B21FA71F8E46DA00920EA0 /* HTTPRequest.swift */,
 				78B21FA81F8E46DA00920EA0 /* HTTPResponse.swift */,
 				78B21FA91F8E46DA00920EA0 /* HTTPSession.swift */,
+				783A710C1F9498DF00556286 /* MultipartBuilder.swift */,
 			);
 			path = HTTP;
 			sourceTree = "<group>";
@@ -455,8 +465,10 @@
 				7825C9861F6C3A1500A78248 /* CacheDiskProvider.swift in Sources */,
 				7825C98D1F6C3A1A00A78248 /* Debug.swift in Sources */,
 				7825C9701F6C3A1000A78248 /* Number.swift in Sources */,
+				783A71061F94986800556286 /* HTTPRequest.swift in Sources */,
 				7825C98F1F6C3A1A00A78248 /* Geometry.swift in Sources */,
 				7825C9731F6C3A1000A78248 /* String.swift in Sources */,
+				783A710E1F9498DF00556286 /* MultipartBuilder.swift in Sources */,
 				7825C9671F6C3A1000A78248 /* Array.swift in Sources */,
 				7825C9741F6C3A1000A78248 /* URL.swift in Sources */,
 				7825C96D1F6C3A1000A78248 /* Locale.swift in Sources */,
@@ -466,10 +478,12 @@
 				7825C9691F6C3A1000A78248 /* Data.swift in Sources */,
 				7825C9881F6C3A1500A78248 /* CacheOptions.swift in Sources */,
 				7825C96E1F6C3A1000A78248 /* Notification.swift in Sources */,
+				783A71071F94986800556286 /* HTTPResponse.swift in Sources */,
 				7825C9911F6C3A1A00A78248 /* Reachability.swift in Sources */,
 				7825C9711F6C3A1000A78248 /* Operators.swift in Sources */,
 				7825C9851F6C3A1500A78248 /* Cache.swift in Sources */,
 				7825C9681F6C3A1000A78248 /* CollectionType.swift in Sources */,
+				783A71081F94986800556286 /* HTTPSession.swift in Sources */,
 				7825C98E1F6C3A1A00A78248 /* DeepLink.swift in Sources */,
 				7825C9751F6C3A1000A78248 /* UserDefaults.swift in Sources */,
 				7825C9A11F6C3BF300A78248 /* Hash.swift in Sources */,
@@ -487,8 +501,10 @@
 				7825C98A1F6C3A1600A78248 /* CacheDiskProvider.swift in Sources */,
 				7825C9921F6C3A1A00A78248 /* Debug.swift in Sources */,
 				7825C97F1F6C3A1000A78248 /* Number.swift in Sources */,
+				783A71091F94986800556286 /* HTTPRequest.swift in Sources */,
 				7825C9941F6C3A1A00A78248 /* Geometry.swift in Sources */,
 				7825C9821F6C3A1000A78248 /* String.swift in Sources */,
+				783A710D1F9498DF00556286 /* MultipartBuilder.swift in Sources */,
 				7825C9761F6C3A1000A78248 /* Array.swift in Sources */,
 				7825C9831F6C3A1000A78248 /* URL.swift in Sources */,
 				7825C97C1F6C3A1000A78248 /* Locale.swift in Sources */,
@@ -498,10 +514,12 @@
 				7825C9781F6C3A1000A78248 /* Data.swift in Sources */,
 				7825C98C1F6C3A1600A78248 /* CacheOptions.swift in Sources */,
 				7825C97D1F6C3A1000A78248 /* Notification.swift in Sources */,
+				783A710A1F94986800556286 /* HTTPResponse.swift in Sources */,
 				7825C9961F6C3A1A00A78248 /* Reachability.swift in Sources */,
 				7825C9801F6C3A1000A78248 /* Operators.swift in Sources */,
 				7825C9891F6C3A1600A78248 /* Cache.swift in Sources */,
 				7825C9771F6C3A1000A78248 /* CollectionType.swift in Sources */,
+				783A710B1F94986800556286 /* HTTPSession.swift in Sources */,
 				7825C9931F6C3A1A00A78248 /* DeepLink.swift in Sources */,
 				7825C9841F6C3A1000A78248 /* UserDefaults.swift in Sources */,
 				7825C9A21F6C3BF300A78248 /* Hash.swift in Sources */,
