@@ -23,7 +23,7 @@ open class HTTPRequest: NSObject {
         case delete = "DELETE"
     }
     
-    let id = NSUUID().uuidString
+    public let id = NSUUID().uuidString
     
     public let url          : URL
     public var headers      : [String:String]
