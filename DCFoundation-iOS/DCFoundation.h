@@ -6,7 +6,7 @@
 //  Copyright © 2017 Igor Danich. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for DCFoundation-iOS.
 FOUNDATION_EXPORT double DCFoundation_iOSVersionNumber;

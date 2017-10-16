@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7825C94C1F6C397400A78248 /* DCFoundation-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825C94A1F6C397400A78248 /* DCFoundation-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7825C94C1F6C397400A78248 /* DCFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825C94A1F6C397400A78248 /* DCFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7825C95D1F6C397C00A78248 /* DCFoundation-Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825C95B1F6C397C00A78248 /* DCFoundation-Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7825C9601F6C397C00A78248 /* DCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7825C9591F6C397C00A78248 /* DCFoundation.framework */; };
 		7825C9611F6C397C00A78248 /* DCFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7825C9591F6C397C00A78248 /* DCFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -109,7 +109,7 @@
 
 /* Begin PBXFileReference section */
 		7825C9481F6C397300A78248 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7825C94A1F6C397400A78248 /* DCFoundation-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFoundation-iOS.h"; sourceTree = "<group>"; };
+		7825C94A1F6C397400A78248 /* DCFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCFoundation.h; sourceTree = "<group>"; };
 		7825C94B1F6C397400A78248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7825C9591F6C397C00A78248 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7825C95B1F6C397C00A78248 /* DCFoundation-Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFoundation-Mac.h"; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		7825C9491F6C397400A78248 /* DCFoundation-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7825C94A1F6C397400A78248 /* DCFoundation-iOS.h */,
+				7825C94A1F6C397400A78248 /* DCFoundation.h */,
 				7825C94B1F6C397400A78248 /* Info.plist */,
 			);
 			path = "DCFoundation-iOS";
@@ -315,7 +315,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7825C94C1F6C397400A78248 /* DCFoundation-iOS.h in Headers */,
+				7825C94C1F6C397400A78248 /* DCFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
