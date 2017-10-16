@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class HTTPSession: NSObject, URLSessionDelegate {
+open class HTTPSession: NSObject, URLSessionDelegate {
 
     public static let shared = HTTPSession()
     

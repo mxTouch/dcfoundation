@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class HTTPResponse: NSObject {
+open class HTTPResponse: NSObject {
 
     fileprivate let response    : HTTPURLResponse?
     

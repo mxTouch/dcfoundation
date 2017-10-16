@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class HTTPRequest: NSObject {
+open class HTTPRequest: NSObject {
     
     public enum ContentType: String {
         case formURLEncoded     = "application/x-www-form-urlencoded"
