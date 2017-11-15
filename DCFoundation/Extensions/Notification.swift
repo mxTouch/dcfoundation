@@ -76,7 +76,7 @@ class NotificationListener: NSObject {
             NotificationCenter.default.removeObserver(self, name: NSNotification.Name(rawValue: name), object: object)
         }
         
-        func onNotification(ntf: NSNotification) {
+        @objc func onNotification(ntf: NSNotification) {
             print("Notification receive: \(ntf.name)")
             handler?(ntf)
         }

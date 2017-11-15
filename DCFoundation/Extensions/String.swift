@@ -20,7 +20,7 @@ public extension String {
 public extension String {
 
     public var length: Int {
-        return characters.count
+        return count
     }
     
     public func appending(pathComponent: String) -> String {
