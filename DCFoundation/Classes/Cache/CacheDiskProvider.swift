@@ -14,8 +14,7 @@ open class CacheDiskProvider: CacheStorageProvider {
     open var identifier = String()
     open var fileExtension: String?
     
-    init() {
-    }
+    public init() {}
     
     public init(fileExtension: String) {
         self.fileExtension = fileExtension
