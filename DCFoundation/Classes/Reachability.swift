@@ -83,7 +83,7 @@ public class Reachability {
     
     fileprivate let queue = DispatchQueue(label: "com.mpfoundation.reachability")
     
-    init?(hostname: String) {
+    public init?(hostname: String) {
         
         guard let ref = SCNetworkReachabilityCreateWithName(nil, hostname) else { return nil }
         reachableOnWWAN = true
