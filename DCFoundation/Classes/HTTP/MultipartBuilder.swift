@@ -15,7 +15,7 @@ public struct MultipartItem {
     let mimeType    : String?
     let fileName    : String?
     
-    init(key: String, value: Data, mimeType: String? = nil, fileName: String? = nil) {
+    public init(key: String, value: Data, mimeType: String? = nil, fileName: String? = nil) {
         self.key = key
         self.value = value
         self.mimeType = mimeType
