@@ -41,7 +41,7 @@ open class HTTPRequest: NSObject {
         return items.joinedBy(separator: "&")
     }
     
-    var urlRequest: URLRequest {
+    public var urlRequest: URLRequest {
         var url = self.url
         if queryString.length > 0 {
             url = URL(string: self.url.absoluteString + "?" + queryString)!
