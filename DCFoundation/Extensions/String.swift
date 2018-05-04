@@ -93,15 +93,3 @@ public extension String {
     
 }
 
-public extension String {
-    
-    public var pairs: [String] {
-        var result: [String] = []
-        let chars = Array(characters)
-        for index in stride(from: 0, to: chars.count, by: 2) {
-            result.append(String(chars[index..<min(index+2, chars.count)]))
-        }
-        return result
-    }
-    
-}
