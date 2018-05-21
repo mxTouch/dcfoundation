@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import CCommonCrypto
+import DCFoundationCommonCrypto
 
 public extension String {
     
