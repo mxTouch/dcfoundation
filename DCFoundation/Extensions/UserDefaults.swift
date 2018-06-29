@@ -14,9 +14,9 @@ public func UserDefaults() -> Foundation.UserDefaults {
 
 public extension Foundation.UserDefaults {
     
-    public subscript(key: String) -> Any? {
+    public subscript<T>(key: String) -> T? {
         get {
-            return object(forKey: key)
+            return object(forKey: key) as? T
         }
         set {
             if let newValue = newValue {
