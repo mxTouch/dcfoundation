@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		781EFDA62154D3A600B70CE7 /* DCFoundation_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 781EFDA42154D3A600B70CE7 /* DCFoundation_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		781EFDA92154D3A600B70CE7 /* DCFoundation_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation_iOS.framework */; };
-		781EFDAA2154D3A600B70CE7 /* DCFoundation_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		781EFDA92154D3A600B70CE7 /* DCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; };
+		781EFDAA2154D3A600B70CE7 /* DCFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		781EFDAE2154D3F000B70CE7 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD722154D14F00B70CE7 /* Geometry.swift */; };
 		781EFDAF2154D3F000B70CE7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD732154D14F00B70CE7 /* Localization.swift */; };
 		781EFDB02154D3F000B70CE7 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD742154D14F00B70CE7 /* DeepLink.swift */; };
@@ -72,7 +72,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				781EFDAA2154D3A600B70CE7 /* DCFoundation_iOS.framework in Embed Frameworks */,
+				781EFDAA2154D3A600B70CE7 /* DCFoundation.framework in Embed Frameworks */,
 				7825C9611F6C397C00A78248 /* DCFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -109,7 +109,7 @@
 		781EFD7E2154D14F00B70CE7 /* HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
 		781EFD7F2154D14F00B70CE7 /* MultipartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartBuilder.swift; sourceTree = "<group>"; };
 		781EFD802154D14F00B70CE7 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
-		781EFDA22154D3A600B70CE7 /* DCFoundation_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		781EFDA22154D3A600B70CE7 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		781EFDA42154D3A600B70CE7 /* DCFoundation_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCFoundation_iOS.h; sourceTree = "<group>"; };
 		781EFDA52154D3A600B70CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7825C9591F6C397C00A78248 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781EFDA92154D3A600B70CE7 /* DCFoundation_iOS.framework in Frameworks */,
+				781EFDA92154D3A600B70CE7 /* DCFoundation.framework in Frameworks */,
 				7825C9601F6C397C00A78248 /* DCFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +252,7 @@
 			children = (
 				78BC4D9F1DF07754004B38A6 /* TestApp.app */,
 				7825C9591F6C397C00A78248 /* DCFoundation.framework */,
-				781EFDA22154D3A600B70CE7 /* DCFoundation_iOS.framework */,
+				781EFDA22154D3A600B70CE7 /* DCFoundation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 			);
 			name = "DCFoundation-iOS";
 			productName = "DCFoundation-iOS";
-			productReference = 781EFDA22154D3A600B70CE7 /* DCFoundation_iOS.framework */;
+			productReference = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7825C9581F6C397C00A78248 /* DCFoundation-Mac */ = {
@@ -527,7 +527,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.agrello.DCFoundation-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DCFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,7 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.agrello.DCFoundation-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = DCFoundation;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
