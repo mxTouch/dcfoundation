@@ -385,9 +385,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				781EFDA12154D3A600B70CE7 /* DCFoundation-iOS */,
 				7825C9581F6C397C00A78248 /* DCFoundation-Mac */,
 				78BC4D9E1DF07754004B38A6 /* TestApp */,
-				781EFDA12154D3A600B70CE7 /* DCFoundation-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -522,7 +522,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DCFoundation-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -550,7 +550,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "DCFoundation-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.agrello.DCFoundation-iOS";
