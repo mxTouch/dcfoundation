@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "781EFDA12154D3A600B70CE7"
-               BuildableName = "DCFoundation_iOS.framework"
+               BuildableName = "DCFoundation.framework"
                BlueprintName = "DCFoundation-iOS"
                ReferencedContainer = "container:DCFoundation.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "781EFDA12154D3A600B70CE7"
-            BuildableName = "DCFoundation_iOS.framework"
+            BuildableName = "DCFoundation.framework"
             BlueprintName = "DCFoundation-iOS"
             ReferencedContainer = "container:DCFoundation.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "781EFDA12154D3A600B70CE7"
-            BuildableName = "DCFoundation_iOS.framework"
+            BuildableName = "DCFoundation.framework"
             BlueprintName = "DCFoundation-iOS"
             ReferencedContainer = "container:DCFoundation.xcodeproj">
          </BuildableReference>
