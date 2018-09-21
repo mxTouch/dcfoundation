@@ -1,15 +1,11 @@
 //
-//  CacheNetwork.swift
-//  MPFoundation
-//
-//  Created by Igor Danich on 07/11/2016.
-//  Copyright © 2016 Igor Danich. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
 
 class CacheNetworkSessionTask: NSObject {
-    open let identifier = NSUUID().uuidString
+    public let identifier = NSUUID().uuidString
     
     open var onUpdate: ((_ bytesReady: Double, _ bytesTotal: Double) -> Void)?
     open var onComplete: ((_ value: Data?, _ error: NSError?) -> Void)?

@@ -1,9 +1,5 @@
 //
-//  NSNotification.swift
-//  MPFoundation
-//
-//  Created by Igor Danich on 07.01.16.
-//  Copyright © 2016 Igor Danich. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

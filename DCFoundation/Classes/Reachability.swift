@@ -1,9 +1,5 @@
 //
-//  Reachability.swift
-//  MPFoundation
-//
-//  Created by Igor Danich on 30/11/2016.
-//  Copyright © 2016 Igor Danich. All rights reserved.
+//  DCFoundation
 //
 
 import SystemConfiguration

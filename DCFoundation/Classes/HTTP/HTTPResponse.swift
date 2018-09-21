@@ -1,8 +1,5 @@
 //
-//  HTTPResponse.swift
-//
-//  Created by Igor Danich on 9/6/17.
-//  Copyright © 2017 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

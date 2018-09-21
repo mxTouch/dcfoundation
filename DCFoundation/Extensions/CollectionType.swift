@@ -1,9 +1,5 @@
 //
-//  CollectionType.swift
-//  MPLibrary
-//
-//  Created by Igor Danich on 21.08.16.
-//  Copyright © 2016 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

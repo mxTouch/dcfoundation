@@ -1,18 +1,14 @@
 //
-//  NSData.swift
-//  MPFoundation
-//
-//  Created by Igor Danich on 19.01.16.
-//  Copyright © 2016 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
 
 public extension Data {
     
-//    var SHA1: String {
-//        return DCFoundationMakeDataSHA1(self)
-//    }
+    func toString(encoding: String.Encoding = .utf8) -> String? {
+        return String(data: self, encoding: encoding)
+    }
     
     var pushToken: String? {
         return (self as NSData).description.replacingOccurrences(of: " ", with: "")

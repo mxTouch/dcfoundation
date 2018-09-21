@@ -1,9 +1,5 @@
 //
-//  MultipartBuild.swift
-//  Palladium
-//
-//  Created by Igor Danich on 9/19/17.
-//  Copyright © 2017 r-style. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

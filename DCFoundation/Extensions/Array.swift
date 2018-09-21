@@ -1,9 +1,5 @@
 //
-//  NSArray.swift
-//  MPFoundation
-//
-//  Created by Igor on 08.12.15.
-//  Copyright © 2015 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
@@ -141,3 +137,15 @@ public func makeArray<T>(count: Int, handler: (_ idx: Int) -> T?) -> Array<T> {
     return list
 }
 
+public extension Sequence where Element: Equatable {
+    
+    var uniqueElements: [Element] {
+        return self.reduce(into: []) {
+            uniqueElements, element in
+            
+            if !uniqueElements.contains(element) {
+                uniqueElements.append(element)
+            }
+        }
+    }
+}

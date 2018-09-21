@@ -1,9 +1,5 @@
 //
-//  DataCache.swift
-//  RocketBall
-//
-//  Created by Igor Danich on 05.02.16.
-//  Copyright © 2016 Igor Danich. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
@@ -25,7 +21,7 @@ fileprivate var caches = [Cache]()
 
 open class Cache {
     
-    @discardableResult open static func initialize(_ name: String, options: CacheOptions? = nil) -> Cache {
+    @discardableResult public static func initialize(_ name: String, options: CacheOptions? = nil) -> Cache {
         for cache in caches {
             if cache.name == name {
                 return cache
@@ -40,7 +36,7 @@ open class Cache {
         return cache
     }
     
-    @discardableResult open static func named(_ name: String) -> Cache {
+    @discardableResult public static func named(_ name: String) -> Cache {
         for cache in caches {
             if cache.name == name {
                 return cache

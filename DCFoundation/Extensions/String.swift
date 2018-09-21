@@ -1,13 +1,9 @@
 //
-//  String.swift
-//  MPFoundation
-//
-//  Created by Igor on 08.12.15.
-//  Copyright © 2015 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
-import DCFoundationCommonCrypto
+//import CommonCrypto
 
 public extension String {
     
@@ -77,19 +73,43 @@ public extension String {
 }
 
 public extension String {
-    
+
     public var MD5: String {
-        let messageData = data(using:.utf8)!
-        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
-        
-        _ = digestData.withUnsafeMutableBytes {digestBytes in
-            messageData.withUnsafeBytes {messageBytes in
-                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
-            }
-        }
-        
-        return digestData.map { String(format: "%02hhx", $0) }.joined()
+        return ""
+//        let messageData = data(using:.utf8)!
+//        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
+//
+//        _ = digestData.withUnsafeMutableBytes {digestBytes in
+//            messageData.withUnsafeBytes {messageBytes in
+//                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
+//            }
+//        }
+//
+//        return digestData.map { String(format: "%02hhx", $0) }.joined()
+    }
+
+}
+
+public extension String {
+    
+    public subscript (bounds: CountableClosedRange<Int>) -> String {
+        let start = index(startIndex, offsetBy: bounds.lowerBound)
+        let end = index(startIndex, offsetBy: bounds.upperBound)
+        return String(self[start...end])
+    }
+    
+    public subscript (bounds: CountableRange<Int>) -> String {
+        let start = index(startIndex, offsetBy: bounds.lowerBound)
+        let end = index(startIndex, offsetBy: bounds.upperBound)
+        return String(self[start..<end])
     }
     
 }
 
+public extension String {
+    
+    public func toData(encoding: String.Encoding = .utf8) -> Data? {
+        return data(using: encoding)
+    }
+    
+}

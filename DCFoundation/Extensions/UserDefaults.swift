@@ -1,9 +1,5 @@
 //
-//  NSUserDefaults.swift
-//  MPFoundation
-//
-//  Created by Igor Danich on 22.01.16.
-//  Copyright © 2016 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

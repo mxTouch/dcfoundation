@@ -1,9 +1,5 @@
 //
-//  CacheDiskProvider.swift
-//  RocketBall
-//
-//  Created by Igor Danich on 05.02.16.
-//  Copyright © 2016 Igor Danich. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

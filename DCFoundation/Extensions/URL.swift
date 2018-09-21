@@ -1,9 +1,5 @@
 //
-//  NSURL.swift
-//  TX2
-//
-//  Created by Igor Danich on 11.02.16.
-//  Copyright © 2016 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation

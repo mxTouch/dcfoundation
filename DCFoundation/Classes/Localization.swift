@@ -1,8 +1,5 @@
 //
-//  Localization.swift
-//
-//  Created by Igor on 08.12.15.
-//  Copyright © 2015 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
@@ -20,17 +17,17 @@ open class Localization {
     
     static let currentKey = "LocalizationCurrentKey"
     
-    open static var useEmptyKeys = true
-    open static var showDefaultLanguageOnEmpty = true
+    public static var useEmptyKeys = true
+    public static var showDefaultLanguageOnEmpty = true
     
     // MARK: - Static
     
-    open static func availableLocalizations() -> [Localization] {
+    public static func availableLocalizations() -> [Localization] {
         preloadLocalizations()
         return localizations
     }
     
-    open static func localizationWithIdentifier(_ identifier: String) -> Localization {
+    public static func localizationWithIdentifier(_ identifier: String) -> Localization {
         for item in availableLocalizations() {
             if item.identifier == identifier {
                 return item
@@ -41,9 +38,9 @@ open class Localization {
         return localization
     }
     
-    open static var defaultLocalization = Localization.localizationWithIdentifier("en")
+    public static var defaultLocalization = Localization.localizationWithIdentifier("en")
     
-    open static func setCurrent(localization newValue: Localization, notify aNotify: Bool = true) {
+    public static func setCurrent(localization newValue: Localization, notify aNotify: Bool = true) {
         var notify = aNotify
         if notify {
             notify = (localization != nil)
@@ -60,7 +57,7 @@ open class Localization {
         }
     }
     
-    open static var current: Localization {
+    public static var current: Localization {
         set {
             setCurrent(localization: newValue)
         }

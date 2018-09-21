@@ -1,9 +1,5 @@
 //
-//  Dictionary.swift
-//  TX2
-//
-//  Created by Igor Danich on 29.01.16.
-//  Copyright © 2016 dclife. All rights reserved.
+//  DCFoundation
 //
 
 import Foundation
