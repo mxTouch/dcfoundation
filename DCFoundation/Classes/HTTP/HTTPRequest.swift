@@ -22,12 +22,13 @@ open class HTTPRequest: NSObject {
     
     public let id = NSUUID().uuidString
     
-    public let url          : URL
-    public var headers      : [String:String]
-    public var method       : Method
-    public var body         : Any?
-    public var query        = [String:Any]()
-    public var contentType  = ContentType.custom
+    public let url                  : URL
+    public var headers              : [String:String]
+    public var method               : Method
+    public var body                 : Any?
+    public var query                = [String:Any]()
+    public var contentType          = ContentType.custom
+    public var shouldHandleCookies  = false
     
     fileprivate var queryString: String {
         var items = [String]()
@@ -45,6 +46,12 @@ open class HTTPRequest: NSObject {
         }
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
+        request.httpShouldHandleCookies = shouldHandleCookies
+        if shouldHandleCookies, let cookies = HTTPCookieStorage.shared.cookies(for: url) {
+            for (key,value) in HTTPCookie.requestHeaderFields(with: cookies) {
+                request.addValue(value, forHTTPHeaderField: key)
+            }
+        }
         for (key,value) in headers {
             request.addValue(value, forHTTPHeaderField: key)
         }

@@ -23,6 +23,13 @@ open class HTTPResponse: NSObject {
         return response?.allHeaderFields as? [String:String] ?? [:]
     }
     
+    public var cookies          : [HTTPCookie]? {
+        if let url = url {
+            return HTTPCookie.cookies(withResponseHeaderFields: headers, for: url)
+        }
+        return nil
+    }
+    
     required public init(response: HTTPURLResponse?, data: Data?, error: Error?) {
         self.response = response
         self.data = data

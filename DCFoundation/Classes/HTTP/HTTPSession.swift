@@ -30,6 +30,13 @@ open class HTTPSession: NSObject, URLSessionDelegate {
                 if let index = self?.requests.index(of: request.id) {
                     self?.requests.remove(at: index)
                     let response = T(response: urlResponse as? HTTPURLResponse, data: data, error: error)
+                    if request.shouldHandleCookies, let cookies = response.cookies {
+                        HTTPCookieStorage.shared.setCookies(cookies, for: request.url, mainDocumentURL: nil)
+                        if let items = HTTPCookieStorage.shared.cookies(for: request.url) {
+                            let values = HTTPCookie.requestHeaderFields(with: items)
+                            print(values)
+                        }
+                    }
                     response.logPrint()
                     handler?(response)
                 }

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		781EFDA62154D3A600B70CE7 /* DCFoundation_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 781EFDA42154D3A600B70CE7 /* DCFoundation_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		781EFDA92154D3A600B70CE7 /* DCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; };
-		781EFDAA2154D3A600B70CE7 /* DCFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		781EFDAE2154D3F000B70CE7 /* Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD722154D14F00B70CE7 /* Geometry.swift */; };
 		781EFDAF2154D3F000B70CE7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD732154D14F00B70CE7 /* Localization.swift */; };
 		781EFDB02154D3F000B70CE7 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD742154D14F00B70CE7 /* DeepLink.swift */; };
@@ -39,41 +37,33 @@
 		781EFDC82154D40400B70CE7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD6F2154D14F00B70CE7 /* UserDefaults.swift */; };
 		781EFDC92154D40400B70CE7 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD702154D14F00B70CE7 /* NSError.swift */; };
 		7825C95D1F6C397C00A78248 /* DCFoundation-Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825C95B1F6C397C00A78248 /* DCFoundation-Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7825C9601F6C397C00A78248 /* DCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7825C9591F6C397C00A78248 /* DCFoundation.framework */; };
-		7825C9611F6C397C00A78248 /* DCFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7825C9591F6C397C00A78248 /* DCFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78BC4DA21DF07754004B38A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA11DF07754004B38A6 /* AppDelegate.swift */; };
 		78BC4DA41DF07754004B38A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA31DF07754004B38A6 /* ViewController.swift */; };
 		78BC4DA71DF07754004B38A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DA51DF07754004B38A6 /* Main.storyboard */; };
 		78BC4DA91DF07754004B38A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DA81DF07754004B38A6 /* Assets.xcassets */; };
 		78BC4DAC1DF07754004B38A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DAA1DF07754004B38A6 /* LaunchScreen.storyboard */; };
+		78EEBB5B2169F3A9002C80FB /* DCFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; };
+		78EEBB5C2169F3A9002C80FB /* DCFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 781EFDA22154D3A600B70CE7 /* DCFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		781EFDA72154D3A600B70CE7 /* PBXContainerItemProxy */ = {
+		78EEBB5D2169F3A9002C80FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 789DB3121DC0BA3400322B9E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 781EFDA12154D3A600B70CE7;
 			remoteInfo = "DCFoundation-iOS";
 		};
-		7825C95E1F6C397C00A78248 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 789DB3121DC0BA3400322B9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7825C9581F6C397C00A78248;
-			remoteInfo = "DCFoundation-Mac";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		78BC4DB51DF0777D004B38A6 /* Embed Frameworks */ = {
+		78EEBB5F2169F3A9002C80FB /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				781EFDAA2154D3A600B70CE7 /* DCFoundation.framework in Embed Frameworks */,
-				7825C9611F6C397C00A78248 /* DCFoundation.framework in Embed Frameworks */,
+				78EEBB5C2169F3A9002C80FB /* DCFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				781EFDA92154D3A600B70CE7 /* DCFoundation.framework in Frameworks */,
-				7825C9601F6C397C00A78248 /* DCFoundation.framework in Frameworks */,
+				78EEBB5B2169F3A9002C80FB /* DCFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,13 +324,12 @@
 				78BC4D9B1DF07754004B38A6 /* Sources */,
 				78BC4D9C1DF07754004B38A6 /* Frameworks */,
 				78BC4D9D1DF07754004B38A6 /* Resources */,
-				78BC4DB51DF0777D004B38A6 /* Embed Frameworks */,
+				78EEBB5F2169F3A9002C80FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7825C95F1F6C397C00A78248 /* PBXTargetDependency */,
-				781EFDA82154D3A600B70CE7 /* PBXTargetDependency */,
+				78EEBB5E2169F3A9002C80FB /* PBXTargetDependency */,
 			);
 			name = TestApp;
 			productName = TestApp;
@@ -368,6 +356,7 @@
 					};
 					78BC4D9E1DF07754004B38A6 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -474,15 +463,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		781EFDA82154D3A600B70CE7 /* PBXTargetDependency */ = {
+		78EEBB5E2169F3A9002C80FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 781EFDA12154D3A600B70CE7 /* DCFoundation-iOS */;
-			targetProxy = 781EFDA72154D3A600B70CE7 /* PBXContainerItemProxy */;
-		};
-		7825C95F1F6C397C00A78248 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7825C9581F6C397C00A78248 /* DCFoundation-Mac */;
-			targetProxy = 7825C95E1F6C397C00A78248 /* PBXContainerItemProxy */;
+			targetProxy = 78EEBB5D2169F3A9002C80FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -513,9 +497,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -541,9 +526,10 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -730,12 +716,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -745,12 +733,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dclife.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
