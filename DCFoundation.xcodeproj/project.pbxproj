@@ -15,12 +15,6 @@
 		781EFDB22154D3F600B70CE7 /* CacheOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD772154D14F00B70CE7 /* CacheOptions.swift */; };
 		781EFDB32154D3F600B70CE7 /* CacheNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD782154D14F00B70CE7 /* CacheNetwork.swift */; };
 		781EFDB42154D3F600B70CE7 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD792154D14F00B70CE7 /* Cache.swift */; };
-		781EFDB52154D3FF00B70CE7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD7A2154D14F00B70CE7 /* Reachability.swift */; };
-		781EFDB62154D3FF00B70CE7 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD7C2154D14F00B70CE7 /* HTTPRequest.swift */; };
-		781EFDB72154D3FF00B70CE7 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD7D2154D14F00B70CE7 /* HTTPResponse.swift */; };
-		781EFDB82154D3FF00B70CE7 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD7E2154D14F00B70CE7 /* HTTPSession.swift */; };
-		781EFDB92154D3FF00B70CE7 /* MultipartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD7F2154D14F00B70CE7 /* MultipartBuilder.swift */; };
-		781EFDBA2154D3FF00B70CE7 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD802154D14F00B70CE7 /* Debug.swift */; };
 		781EFDBB2154D40400B70CE7 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD622154D14F00B70CE7 /* Date.swift */; };
 		781EFDBC2154D40400B70CE7 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD632154D14F00B70CE7 /* Array.swift */; };
 		781EFDBD2154D40400B70CE7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD642154D14F00B70CE7 /* Data.swift */; };
@@ -37,6 +31,12 @@
 		781EFDC82154D40400B70CE7 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD6F2154D14F00B70CE7 /* UserDefaults.swift */; };
 		781EFDC92154D40400B70CE7 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781EFD702154D14F00B70CE7 /* NSError.swift */; };
 		7825C95D1F6C397C00A78248 /* DCFoundation-Mac.h in Headers */ = {isa = PBXBuildFile; fileRef = 7825C95B1F6C397C00A78248 /* DCFoundation-Mac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		786CFB87216E8FE3006C9855 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB7F216E8FE3006C9855 /* Debug.swift */; };
+		786CFB88216E8FE3006C9855 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB81216E8FE3006C9855 /* Reachability.swift */; };
+		786CFB89216E8FE3006C9855 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB83216E8FE3006C9855 /* HTTPRequest.swift */; };
+		786CFB8A216E8FE3006C9855 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB84216E8FE3006C9855 /* HTTPResponse.swift */; };
+		786CFB8B216E8FE3006C9855 /* HTTPSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB85216E8FE3006C9855 /* HTTPSession.swift */; };
+		786CFB8C216E8FE3006C9855 /* MultipartBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786CFB86216E8FE3006C9855 /* MultipartBuilder.swift */; };
 		78BC4DA21DF07754004B38A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA11DF07754004B38A6 /* AppDelegate.swift */; };
 		78BC4DA41DF07754004B38A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BC4DA31DF07754004B38A6 /* ViewController.swift */; };
 		78BC4DA71DF07754004B38A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78BC4DA51DF07754004B38A6 /* Main.storyboard */; };
@@ -93,18 +93,18 @@
 		781EFD772154D14F00B70CE7 /* CacheOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheOptions.swift; sourceTree = "<group>"; };
 		781EFD782154D14F00B70CE7 /* CacheNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheNetwork.swift; sourceTree = "<group>"; };
 		781EFD792154D14F00B70CE7 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		781EFD7A2154D14F00B70CE7 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		781EFD7C2154D14F00B70CE7 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
-		781EFD7D2154D14F00B70CE7 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
-		781EFD7E2154D14F00B70CE7 /* HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
-		781EFD7F2154D14F00B70CE7 /* MultipartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartBuilder.swift; sourceTree = "<group>"; };
-		781EFD802154D14F00B70CE7 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		781EFDA22154D3A600B70CE7 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		781EFDA42154D3A600B70CE7 /* DCFoundation_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCFoundation_iOS.h; sourceTree = "<group>"; };
 		781EFDA52154D3A600B70CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7825C9591F6C397C00A78248 /* DCFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DCFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7825C95B1F6C397C00A78248 /* DCFoundation-Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFoundation-Mac.h"; sourceTree = "<group>"; };
 		7825C95C1F6C397C00A78248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786CFB7F216E8FE3006C9855 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		786CFB81216E8FE3006C9855 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		786CFB83216E8FE3006C9855 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		786CFB84216E8FE3006C9855 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		786CFB85216E8FE3006C9855 /* HTTPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPSession.swift; sourceTree = "<group>"; };
+		786CFB86216E8FE3006C9855 /* MultipartBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartBuilder.swift; sourceTree = "<group>"; };
 		78BC4D9F1DF07754004B38A6 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BC4DA11DF07754004B38A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78BC4DA31DF07754004B38A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,10 +168,9 @@
 				781EFD722154D14F00B70CE7 /* Geometry.swift */,
 				781EFD732154D14F00B70CE7 /* Localization.swift */,
 				781EFD742154D14F00B70CE7 /* DeepLink.swift */,
+				786CFB7E216E8FE3006C9855 /* Debug */,
+				786CFB80216E8FE3006C9855 /* Network */,
 				781EFD752154D14F00B70CE7 /* Cache */,
-				781EFD7A2154D14F00B70CE7 /* Reachability.swift */,
-				781EFD7B2154D14F00B70CE7 /* HTTP */,
-				781EFD802154D14F00B70CE7 /* Debug.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -185,17 +184,6 @@
 				781EFD792154D14F00B70CE7 /* Cache.swift */,
 			);
 			path = Cache;
-			sourceTree = "<group>";
-		};
-		781EFD7B2154D14F00B70CE7 /* HTTP */ = {
-			isa = PBXGroup;
-			children = (
-				781EFD7C2154D14F00B70CE7 /* HTTPRequest.swift */,
-				781EFD7D2154D14F00B70CE7 /* HTTPResponse.swift */,
-				781EFD7E2154D14F00B70CE7 /* HTTPSession.swift */,
-				781EFD7F2154D14F00B70CE7 /* MultipartBuilder.swift */,
-			);
-			path = HTTP;
 			sourceTree = "<group>";
 		};
 		781EFDA32154D3A600B70CE7 /* DCFoundation-iOS */ = {
@@ -223,6 +211,34 @@
 				781EFD612154D14F00B70CE7 /* Extensions */,
 			);
 			path = DCFoundation;
+			sourceTree = "<group>";
+		};
+		786CFB7E216E8FE3006C9855 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB7F216E8FE3006C9855 /* Debug.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		786CFB80216E8FE3006C9855 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB81216E8FE3006C9855 /* Reachability.swift */,
+				786CFB82216E8FE3006C9855 /* HTTP */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		786CFB82216E8FE3006C9855 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				786CFB83216E8FE3006C9855 /* HTTPRequest.swift */,
+				786CFB84216E8FE3006C9855 /* HTTPResponse.swift */,
+				786CFB85216E8FE3006C9855 /* HTTPSession.swift */,
+				786CFB86216E8FE3006C9855 /* MultipartBuilder.swift */,
+			);
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 		789DB3111DC0BA3400322B9E = {
@@ -414,25 +430,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				781EFDC12154D40400B70CE7 /* Number.swift in Sources */,
-				781EFDB82154D3FF00B70CE7 /* HTTPSession.swift in Sources */,
 				781EFDB42154D3F600B70CE7 /* Cache.swift in Sources */,
+				786CFB89216E8FE3006C9855 /* HTTPRequest.swift in Sources */,
+				786CFB8B216E8FE3006C9855 /* HTTPSession.swift in Sources */,
 				781EFDB12154D3F600B70CE7 /* CacheDiskProvider.swift in Sources */,
-				781EFDB72154D3FF00B70CE7 /* HTTPResponse.swift in Sources */,
 				781EFDC02154D40400B70CE7 /* FileSystem.swift in Sources */,
 				781EFDB22154D3F600B70CE7 /* CacheOptions.swift in Sources */,
 				781EFDB02154D3F000B70CE7 /* DeepLink.swift in Sources */,
 				781EFDC22154D40400B70CE7 /* CollectionType.swift in Sources */,
 				781EFDBC2154D40400B70CE7 /* Array.swift in Sources */,
-				781EFDBA2154D3FF00B70CE7 /* Debug.swift in Sources */,
-				781EFDB92154D3FF00B70CE7 /* MultipartBuilder.swift in Sources */,
+				786CFB87216E8FE3006C9855 /* Debug.swift in Sources */,
 				781EFDC42154D40400B70CE7 /* Dictionary.swift in Sources */,
 				781EFDB32154D3F600B70CE7 /* CacheNetwork.swift in Sources */,
 				781EFDC72154D40400B70CE7 /* String.swift in Sources */,
 				781EFDBB2154D40400B70CE7 /* Date.swift in Sources */,
 				781EFDC62154D40400B70CE7 /* URL.swift in Sources */,
+				786CFB88216E8FE3006C9855 /* Reachability.swift in Sources */,
 				781EFDAF2154D3F000B70CE7 /* Localization.swift in Sources */,
-				781EFDB62154D3FF00B70CE7 /* HTTPRequest.swift in Sources */,
-				781EFDB52154D3FF00B70CE7 /* Reachability.swift in Sources */,
+				786CFB8C216E8FE3006C9855 /* MultipartBuilder.swift in Sources */,
 				781EFDC32154D40400B70CE7 /* Operators.swift in Sources */,
 				781EFDAE2154D3F000B70CE7 /* Geometry.swift in Sources */,
 				781EFDC52154D40400B70CE7 /* Notification.swift in Sources */,
@@ -440,6 +455,7 @@
 				781EFDC82154D40400B70CE7 /* UserDefaults.swift in Sources */,
 				781EFDBD2154D40400B70CE7 /* Data.swift in Sources */,
 				781EFDBF2154D40400B70CE7 /* Runtime.swift in Sources */,
+				786CFB8A216E8FE3006C9855 /* HTTPResponse.swift in Sources */,
 				781EFDBE2154D40400B70CE7 /* Locale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
