@@ -7,6 +7,16 @@ import CommonCrypto
 
 public extension String {
     
+    func date(format: String) -> Date? {
+        let df = DateFormatter()
+        df.dateFormat = format
+        return df.date(from:self)
+    }
+    
+}
+
+public extension String {
+    
     public var localized: String {
         return LocalizedString(self)
     }
@@ -31,9 +41,7 @@ public extension String {
 
 public extension String {
 
-    public var length: Int {
-        return count
-    }
+    public var length: Int { return count }
     
     public func appending(pathComponent: String) -> String {
         return (self as NSString).appendingPathComponent(pathComponent)
@@ -55,9 +63,7 @@ public extension String {
 
 public extension String {
     
-    public var isValidEmail: Bool {
-        return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isValidToRegex("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
-    }
+    public var isValidEmail: Bool { return trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isValidToRegex("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}") }
     
     public var isValidPhoneNumber: Bool {
         let regex = "([\\+(]?(\\d){2,}[)]?[- \\.]?(\\d){2,}[- \\.]?(\\d){2,}[- \\.]?(\\d){2,}[- \\.]?(\\d){2,})|([\\+(]?(\\d){2,}[)]?[- \\.]?(\\d){2,}[- \\.]?(\\d){2,}[- \\.]?(\\d){2,})|([\\+(]?(\\d){2,}[)]?[- \\.]?(\\d){2,}[- \\.]?(\\d){2,})"
@@ -73,17 +79,11 @@ public extension String {
 public extension String {
     
     public func URLEncodedString() -> String {
-        if let escapedString = addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) {
-            return escapedString
-        }
-        return ""
+        return addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) ?? ""
     }
     
     public func URLDecodedString() -> String {
-        if let escapedString = removingPercentEncoding {
-            return escapedString
-        }
-        return ""
+        return removingPercentEncoding ?? ""
     }
     
 }

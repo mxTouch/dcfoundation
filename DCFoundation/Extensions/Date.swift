@@ -14,16 +14,6 @@ public extension Date {
     
 }
 
-public extension String {
-    
-    func date(format: String) -> Date? {
-        let df = DateFormatter()
-        df.dateFormat = format
-        return df.date(from:self)
-    }
-    
-}
-
 public extension Date {
     
     init(day: Int, month: Int, year: Int) {
