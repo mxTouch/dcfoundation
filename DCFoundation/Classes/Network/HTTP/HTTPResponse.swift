@@ -30,7 +30,10 @@ open class HTTPResponse: NSObject {
         return nil
     }
     
-    required public init(response: HTTPURLResponse?, data: Data?, error: Error?) {
+    public let isLoggingEnabled: Bool
+    
+    required public init(response: HTTPURLResponse?, data: Data?, error: Error?, isLoggingEnabled: Bool = true) {
+        self.isLoggingEnabled = isLoggingEnabled
         self.response = response
         self.data = data
         self.responseError = error
@@ -38,6 +41,7 @@ open class HTTPResponse: NSObject {
     }
     
     public func logPrint() {
+        guard isLoggingEnabled else { return }
         print("----------------Response---------------")
         print("\(url?.absoluteString ?? "")")
         print(headers)

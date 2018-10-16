@@ -29,6 +29,7 @@ open class HTTPRequest: NSObject {
     public var query                = [String:Any]()
     public var contentType          = ContentType.custom
     public var shouldHandleCookies  = false
+    public var isLoggingEnabled     = true
     
     fileprivate var queryString: String {
         var items = [String]()
@@ -79,7 +80,8 @@ open class HTTPRequest: NSObject {
         return request
     }
     
-    public init(url: URL, method: Method = .get) {
+    public init(url: URL, method: Method = .get, isLoggingEnabled: Bool = true) {
+        self.isLoggingEnabled = isLoggingEnabled
         self.url = url
         self.method = method
         headers = [:]
@@ -96,6 +98,7 @@ open class HTTPRequest: NSObject {
     }
     
     public func logPrint() {
+        guard isLoggingEnabled else { return }
         print("----------------Request----------------")
         print("\(method.rawValue) \(url.absoluteString)?\(queryString)")
         print(headers)

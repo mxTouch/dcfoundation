@@ -29,7 +29,7 @@ open class HTTPSession: NSObject, URLSessionDelegate {
             OperationQueue.main.addOperation { 
                 if let index = self?.requests.index(of: request.id) {
                     self?.requests.remove(at: index)
-                    let response = T(response: urlResponse as? HTTPURLResponse, data: data, error: error)
+                    let response = T(response: urlResponse as? HTTPURLResponse, data: data, error: error, isLoggingEnabled: request.isLoggingEnabled)
                     if request.shouldHandleCookies, let cookies = response.cookies {
                         HTTPCookieStorage.shared.setCookies(cookies, for: request.url, mainDocumentURL: nil)
                         if let items = HTTPCookieStorage.shared.cookies(for: request.url) {
